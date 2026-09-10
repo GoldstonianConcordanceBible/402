@@ -1,24 +1,52 @@
 PONS 402
 
-Governance Before Execution
+Status: GENESIS v2 — CONTROL PLANE BUILD
+Default Posture: FAIL CLOSED
+Core Doctrine: CAN ≠ MAY
 
-PONS 402 is the governance, compliance, provenance, audit, and human-authorization layer of the PONS ecosystem.
+PONS 402 is the governance, authorization, provenance, audit, and human-accountability control plane for PONS-controlled actions.
 
-It exists to answer one question before a PONS asset, agent, wallet, treasury, payment endpoint, Lab, token, or automated action is allowed to execute:
+It does not claim control over third-party or immutable protocols merely because a PONS-controlled actor interacts with them.
 
-CAN THIS ACTION PROCEED?
+⸻
 
-PONS 402 separates three concepts that must not be confused:
+WHAT 402 DOES
 
-402 — the PONS governance, compliance, ethics, provenance, and audit framework.
+PONS 402 evaluates whether a PONS-controlled action may proceed.
 
-x402 — an external open payment protocol that may be used by PONS for machine-native payments.
+It governs:
 
-HTTP 402 Payment Required — the HTTP status mechanism used by x402-compatible payment flows.
+* PONS-controlled agents
+* PONS-controlled wallets
+* PONS-controlled treasuries
+* PONS-controlled execution services
+* PONS-controlled Labs
+* PONS-controlled launch workflows
+* PONS-controlled payment workflows
+* PONS-controlled deployment workflows
+* human approvals
+* policy versions
+* evidence
+* provenance
+* accounting reconciliation requirements
+* Control Tower decisions
 
-PONS 402 does not replace x402.
+⸻
 
-PONS 402 governs whether, when, where, by whom, and under what controls an x402-enabled transaction or other PONS action may occur.
+WHAT 402 DOES NOT DO
+
+PONS 402 does not:
+
+* turn AI recommendations into legal authority
+* treat payment success as authorization
+* treat wallet possession as governance authority
+* treat token existence as a legal right
+* claim control over third-party protocol code
+* store private keys
+* store seed phrases
+* store signing secrets
+* certify legal compliance by itself
+* make an AI model the final source of human authority
 
 ⸻
 
@@ -26,107 +54,108 @@ CORE DOCTRINE
 
 CAN ≠ MAY
 
-A machine may technically be capable of performing an action without being authorized to perform it.
+Technical capability does not establish authorization.
+
+A system may technically be capable of performing an action without being authorized to perform it.
+
+⸻
 
 CONTROL THE CORE. DISTRIBUTE THE RAILS.
 
-PONS may use decentralized infrastructure, public blockchains, external protocols, agents, APIs, facilitators, bridges, wallets, and marketplaces while maintaining an internal constitutional control layer.
+PONS may use:
+
+* public blockchains
+* external protocols
+* APIs
+* facilitators
+* AI models
+* wallets
+* marketplaces
+* bridges
+* payment systems
+* launchpads
+
+while maintaining an internal constitutional control layer over PONS-controlled authority.
+
+⸻
 
 AUGMENTATION WITHOUT ABDICATION
 
-Artificial intelligence may analyze, recommend, monitor, classify, simulate, and prepare actions.
+AI may:
 
-AI does not become the final source of legal, fiduciary, ethical, treasury, or governance authority.
+* analyze
+* monitor
+* classify
+* recommend
+* simulate
+* prepare
+* reconcile
+* report
+
+AI does not automatically become:
+
+* legal authority
+* treasury authority
+* fiduciary authority
+* governance authority
+* signing authority
+
+⸻
 
 PROVENANCE = THE SUPPLY CHAIN OF TRUST
 
-Every important action should be attributable to its originating proposal, evidence, reviewer, wallet, entity, policy decision, transaction, and resulting state.
+Every material PONS-controlled action should be attributable to:
 
-THE CONTROL TOWER NEEDS A CONSTITUTION
-
-402 is that constitutional gate for the PONS execution environment.
-
-⸻
-
-PONS 402 POSITION IN THE STACK
-
-PONS is the execution and market infrastructure.
-
-402 is the governance gate.
-
-The Control Tower is the supervisory coordination layer.
-
-Labs are controlled experimental and operating environments.
-
-Agents perform bounded machine actions.
-
-Wallets and treasuries move permitted value.
-
-x402 may provide payment transport.
-
-The canonical flow is:
-
-IDEA
-
-↓
-
-PONS INTAKE
-
-↓
-
-402 CLASSIFICATION
-
-↓
-
-RIGHTS + ENTITY REVIEW
-
-↓
-
-PROVENANCE REVIEW
-
-↓
-
-RISK + COMPLIANCE REVIEW
-
-↓
-
-WALLET / TREASURY AUTHORIZATION
-
-↓
-
-HUMAN GATE
-
-↓
-
-CONTROL TOWER DECISION
-
-↓
-
-PONS EXECUTION
-
-↓
-
-TRANSACTION / ACTION EVIDENCE
-
-↓
-
-AUDIT RECORD
+* originating request
+* evidence
+* applicable policy
+* reviewer
+* approval
+* wallet
+* entity
+* contract
+* execution result
+* transaction
+* accounting treatment
+* resulting state
 
 ⸻
 
-402 FAIL-CLOSED RULE
+CONTROL SCOPE RULE
 
-PONS 402 operates under a fail-closed governance model.
+PONS 402 governs PONS-controlled authority and execution pathways. It does not claim authority over third-party or immutable protocols that do not implement a 402 enforcement hook.
 
-If required information cannot be verified, the system does not infer permission.
+Where a third-party system cannot enforce PONS 402 directly, PONS must enforce governance at a boundary it controls.
 
-Unknown does not equal approved.
+Examples include:
 
-Missing does not equal satisfied.
+* agent
+* wallet
+* treasury
+* API
+* execution service
+* signer
+* deployment workflow
+* Control Tower
+* human operator
 
-Technically possible does not equal authorized.
+⸻
 
-A failed or incomplete gate produces:
+EVIDENCE RULE
+
+Absence of verified evidence does not prove absence of a control. It produces NOT_ESTABLISHED. When that control is mandatory, execution remains HOLD.
+
+PONS 402 does not convert missing evidence into certainty.
+
+⸻
+
+FAIL-CLOSED RULE
+
+Missing, stale, contradictory, revoked, unsupported, expired, or unverifiable mandatory information must not result in automatic execution.
+
+The system returns:
+
+APPROVE
 
 HOLD
 
@@ -134,63 +163,149 @@ or
 
 DENY
 
-—not automatic execution.
+No mandatory gate defaults to approval.
 
 ⸻
 
-CANONICAL 402 STATES
+CANONICAL EXECUTION MODEL
 
-Every governed object must have an explicit state.
+REQUEST
 
-DRAFT
+↓
 
-The object exists but is not eligible for execution.
+NORMALIZE
 
-REVIEW
+↓
 
-Required evidence is being evaluated.
+RESOLVE OBJECTS
+
+↓
+
+VALIDATE SCHEMA
+
+↓
+
+EVALUATE POLICY
+
+↓
+
+HUMAN GATE WHERE REQUIRED
+
+↓
+
+SIMULATE WHERE REQUIRED
+
+↓
+
+CONTROL TOWER DECISION
+
+↓
+
+SEPARATE EXECUTION COMPONENT
+
+↓
+
+VERIFY RESULT
+
+↓
+
+RECONCILE
+
+↓
+
+ARCHIVE EVIDENCE
+
+⸻
+
+CANONICAL DECISION STATES
+
+APPROVE
+
+All mandatory controls required for the proposed action are satisfied.
+
+Approval remains scoped to the exact authorized action.
+
+⸻
 
 HOLD
 
-Execution is temporarily prohibited pending missing evidence, human review, reconciliation, or remediation.
-
-APPROVED
-
-Required gates have been satisfied for the specifically authorized action.
-
-Approval is scoped and does not constitute unlimited future authorization.
-
-DENIED
-
-Execution is prohibited.
-
-RETIRED
-
-The asset, authorization, endpoint, wallet role, or governed object has been intentionally removed from active operation.
+Execution must stop pending additional evidence, review, reconciliation, verification, or correction.
 
 ⸻
 
-HUMAN GATE
+DENY
 
-PONS 402 requires accountable human governance for material actions.
+Execution is prohibited under the current policy state.
 
-The framework must preserve a record of:
+⸻
 
-* requester
-* originating system
-* proposed action
-* affected asset
-* affected wallet
-* affected treasury
-* affected entity
-* applicable policy
-* supporting evidence
-* AI recommendation, if any
-* reviewer
-* approval or denial
-* timestamp
-* transaction or execution result
-* resulting state
+CANEXECUTE
+
+The internal decision system should preserve explainable state.
+
+It should not rely exclusively on a Boolean.
+
+The authoritative internal decision is:
+
+APPROVE
+
+HOLD
+
+or
+
+DENY
+
+A final execution adapter may derive:
+
+canExecute: true
+
+only when:
+
+decision == APPROVE
+
+Otherwise:
+
+canExecute: false
+
+⸻
+
+EVIDENCE CLASSES
+
+Every material claim should be classified as one of:
+
+VERIFIED
+
+Confirmed through authoritative evidence.
+
+CORROBORATED
+
+Supported by multiple independent sources or records.
+
+AUTHOR_ORIGINATED
+
+Provided by the project operator or originating source but not yet independently verified.
+
+PROPOSED
+
+Planned architecture or policy not yet implemented.
+
+FUTURE_EXPERIMENT
+
+Defined for later testing.
+
+NOT_ESTABLISHED
+
+Available evidence is insufficient to establish the claim.
+
+CONTRADICTED
+
+Available evidence materially conflicts with the claim.
+
+⸻
+
+HUMAN ACCOUNTABILITY
+
+PONS 402 preserves accountable human governance for material actions.
 
 AI recommendations are evidence inputs.
 
@@ -200,429 +315,370 @@ They are not legal approvals.
 
 They are not treasury authority.
 
-⸻
+Where policy requires a Human Gate, approval must identify:
 
-402 REVIEW NODE
-
-The designated legal / ethics / compliance review function is represented within the architecture by the 402 Reviewer Node.
-
-Current designated reviewer:
-
-Victor B. George, JD
-
-The reviewer node is intended to evaluate relevant matters such as:
-
-* asset characterization
-* disclosures
-* conflicts
-* governance
-* ethics
-* authorization
-* consumer-facing representations
-* jurisdictional restrictions
-* internal controls
-* documentation sufficiency
-* escalation requirements
-
-The repository records the process and evidence supporting decisions.
-
-It does not represent that software can substitute for qualified legal, tax, accounting, securities, AML, sanctions, or other professional advice where such advice is required.
+* accountable reviewer
+* reviewer role
+* action ID
+* policy version
+* scope
+* relevant wallet
+* relevant destination
+* relevant contract
+* relevant asset
+* amount or maximum amount
+* expiration
+* simulation evidence where applicable
+* approval decision
 
 ⸻
 
-GOVERNED PONS OBJECTS
+SEPARATION OF DUTIES
 
-402 applies to material PONS ecosystem objects including:
+PONS 402 recognizes distinct control functions including:
 
-* tokenized assets
-* Market Labs
-* AI agents
-* PONS launch workflows
-* smart contracts
-* payment endpoints
-* x402 resources
-* facilitators
-* APIs
-* wallets
-* treasury wallets
-* deployment wallets
-* allocation wallets
-* bridges
-* exchanges
-* marketplaces
-* counterparties
-* contributor allocations
-* royalty structures
-* digital media assets
-* intellectual-property-linked assets
-* educational assets
-* research assets
-* data assets
-* entity relationships
+* REQUESTER
+* TECHNICAL_REVIEWER
+* 402_REVIEWER
+* TREASURY_APPROVER
+* EXECUTION_OPERATOR
+* POST_EXECUTION_AUDITOR
+
+During Genesis, one person may occupy more than one function.
+
+If so, that overlap must be recorded as:
+
+CONTROL_CONCENTRATION
+
+PONS 402 must not claim independent separation of duties where it does not actually exist.
 
 ⸻
 
-PONS LAB ARCHITECTURE
+APPROVAL BINDING
 
-402 is designed to govern the expanding PONS Lab environment, including controlled experiments such as:
+A material approval must be bound to the exact relevant execution parameters.
 
-* D Labs
-* X Labs
-* N Labs
-* GLabs
-* ELabs
-* ABC Labs
-* Tesla Lab
-* future Market Labs
-* approved ecosystem experiments
+These may include:
 
-A Lab is not independently sovereign.
+* action ID
+* policy version
+* chain ID
+* wallet ID
+* destination
+* contract address
+* function selector
+* asset
+* maximum amount
+* contract digest
+* implementation digest
+* simulation digest
+* expiration
 
-Each Lab inherits PONS constitutional controls.
+A material change invalidates the prior approval.
 
-Each Lab must identify its:
+The action returns to:
 
-* purpose
-* operator
-* governing entity
-* approved assets
-* approved contracts
-* approved networks
-* approved wallets
-* treasury authority
-* experiment boundaries
-* disclosures
-* risk limits
-* data sources
-* agent permissions
-* human approvers
-* shutdown procedure
+HOLD
 
 ⸻
 
-WALLET CONSTITUTION
+DECISION ≠ SIGNING
 
-Wallet capability does not imply wallet authority.
+The PONS 402 decision engine must not contain signing credentials.
 
-Every PONS wallet must have an assigned role.
+The Control Tower evaluates.
 
-Examples include:
+The signer executes only a valid, bounded authorization.
 
-* ROOT
-* TREASURY
-* ALLOCATION
-* DEPLOY
-* OPERATIONS
-* REVENUE
-* EXPENSE
-* FACILITATOR
-* SETTLEMENT
-* LAB
-* ARCHIVE
+The intended separation is:
 
-Funds should move only through documented authorized paths.
+DECISION PLANE
 
-Personal custody should not be silently substituted for institutional or project custody.
+↓
 
-Transfers should be attributable to a documented purpose.
+SCOPED AUTHORIZATION
 
-Bridges must be treated as controlled transitions between execution environments.
+↓
+
+EXECUTION PLANE
+
+This reduces the risk that a compromised AI model can convert its own recommendation directly into asset movement.
 
 ⸻
-
-GENESIS TREASURY PRINCIPLE
-
-Within the broader Divine Chain architecture, $IAM is the designated genesis/seeding asset.
-
-The intended treasury structure is:
-
-IAM GENESIS / SEEDING TREASURY
-
-↓
-
-DOMAIN TREASURIES
-
-↓
-
-G Films
-PMO
-RUNiC Media
-SydTek
-Gemach
-402
-
-↓
-
-PROJECT / LAB TREASURIES
-
-↓
-
-PONS Market Lab nodes and approved experiments
-
-402 must record and govern these relationships without assuming that an allocation, token, or wallet structure creates equity, debt, revenue rights, profit rights, ownership rights, or other legal rights unless those rights are expressly created and documented.
-
-⸻
-
-X402 INTEGRATION
-
-PONS may use x402-compatible infrastructure for machine-to-machine payments, API monetization, agent commerce, paid resources, or other approved services.
-
-x402 integration occurs after governance policy, not before it.
-
-The target flow is:
-
-AGENT REQUEST
-
-↓
-
-PONS RESOURCE
-
-↓
-
-402 POLICY CHECK
-
-↓
-
-If payment is required:
-
-HTTP 402 / x402 PAYMENT REQUIREMENTS
-
-↓
-
-AUTHORIZED PAYMENT
-
-↓
-
-VERIFY
-
-↓
-
-SETTLE
-
-↓
-
-PONS 402 POST-SETTLEMENT CHECK
-
-↓
-
-RESOURCE / ACTION RELEASED
-
-↓
-
-AUDIT LOG
-
-Successful payment alone does not override PONS governance.
 
 PAID ≠ AUTHORIZED
 
-⸻
+PONS 402 and x402 are distinct.
 
-PONS CONTROL TOWER
+PONS 402 is the governance layer.
 
-The Control Tower consumes 402 evidence and determines whether execution conditions are satisfied.
+x402 may serve as an external machine-payment rail.
 
-A future machine-readable launch decision should resolve to something equivalent to:
+A successful payment does not override governance.
 
-canLaunch: true
+Payment signing or settlement must not automatically transform:
+
+HOLD
 
 or
 
-canLaunch: false
+DENY
 
-A positive result should require satisfaction of all mandatory gates relevant to the proposed action.
+into:
 
-No individual AI model should be able to silently transform a failed mandatory gate into approval.
-
-⸻
-
-MINIMUM LAUNCH GATES
-
-A governed launch should establish, where applicable:
-
-1. Asset identity
-2. Asset purpose
-3. Governing entity
-4. Operator
-5. Rights classification
-6. Intellectual-property rights
-7. Network
-8. Contract address
-9. Deployment authority
-10. Treasury authority
-11. Wallet registry
-12. Allocation policy
-13. Disclosures
-14. Jurisdiction policy
-15. Eligibility restrictions
-16. Payment architecture
-17. x402 configuration if used
-18. Facilitator configuration if used
-19. Provenance evidence
-20. AI permissions
-21. Human reviewer
-22. Emergency shutdown authority
-23. Accounting treatment
-24. Audit trail
-25. Control Tower approval
+APPROVE
 
 ⸻
 
-ACCOUNTING AND REPORTING
+WALLET POSSESSION ≠ AUTHORITY
 
-PONS 402 is designed to integrate operational records with accounting and reporting infrastructure such as Odoo.
+Control of a blockchain address does not independently establish permission to use it.
 
-The objective is reconciliation between:
+Wallet authority derives from:
 
-ONCHAIN EVENTS
-
-and
-
-OFFCHAIN BOOKS
-
-Every material transfer should be capable of being traced from:
-
-proposal → authorization → transaction → confirmation → accounting classification → audit evidence.
+* policy
+* current registry state
+* human authorization where required
+* transaction scope
+* evidence
+* execution limits
 
 ⸻
 
-TRANSPARENCY
+TOKEN ≠ LEGAL RIGHT
 
-PONS 402 is designed around verifiable transparency without exposing information that creates security, privacy, legal, or operational risk.
-
-Public transparency may include:
-
-* policies
-* governance documents
-* approved manifests
-* disclosures
-* contract addresses
-* public treasury addresses
-* hashes
-* methodology
-* change logs
-* audit summaries
-* experiment status
-
-Restricted information may include:
-
-* private keys
-* seed phrases
-* credentials
-* security procedures
-* personally identifiable information
-* privileged legal communications
-* protected customer information
-* unpublished vulnerability information
-
-TRANSPARENCY DOES NOT REQUIRE OPERATIONAL SELF-SABOTAGE.
-
-⸻
-
-EVIDENCE CLASSES
-
-PONS 402 uses explicit evidence classification.
-
-VERIFIED
-
-Directly confirmed through authoritative evidence.
-
-CORROBORATED
-
-Supported by multiple independent sources or records.
-
-AUTHOR-ORIGINATED
-
-Statement or artifact originating from the project operator or creator.
-
-PROPOSED
-
-A planned rule, structure, system, or action that has not yet been implemented.
-
-FUTURE EXPERIMENT
-
-A defined hypothesis or architecture reserved for later testing.
-
-These categories prevent proposals from being represented as completed facts.
-
-⸻
-
-AUDITABILITY
-
-The goal of 402 is not merely to create logs.
-
-The goal is to reconstruct decisions.
-
-A future reviewer should be able to answer:
-
-WHAT HAPPENED?
-
-WHO AUTHORIZED IT?
-
-WHAT EVIDENCE EXISTED AT THE TIME?
-
-WHAT POLICY APPLIED?
-
-WHAT DID THE MACHINES RECOMMEND?
-
-WHAT DID THE HUMAN DECIDE?
-
-WHAT MOVED?
-
-WHERE DID IT MOVE?
-
-WHY?
-
-WHAT WAS THE RESULT?
-
-⸻
-
-SECURITY PRINCIPLE
-
-No repository file, AI model, Discord instruction, API response, payment confirmation, or agent output should itself be treated as possession of a private key or unrestricted treasury authority.
-
-Secrets remain outside public source control.
-
-Least privilege is the default.
-
-Permissions should be scoped to the minimum action required.
-
-Material operations should support revocation and emergency shutdown.
-
-⸻
-
-402 IS NOT A TOKEN
-
-The 402 framework should not automatically be interpreted as:
+A token must not automatically be interpreted as:
 
 * equity
 * debt
-* a security
-* a deposit
-* a bank account
-* ownership in PONS
-* ownership in a Lab
-* ownership in an underlying company
-* guaranteed appreciation
+* ownership
+* company shares
+* revenue rights
+* royalties
+* yield
 * guaranteed liquidity
-* guaranteed yield
-* guaranteed revenue
-* guaranteed profit
+* guaranteed appreciation
+* redemption rights
+* governance power
 
-Any tokenized implementation must receive its own documented analysis and disclosures.
+unless those rights are expressly created and separately documented.
 
 ⸻
 
-DEVELOPMENT PRINCIPLE
+PONS LABS
 
-PONS 402 should evolve from documentation into executable policy.
+A Lab is a governed PONS object.
 
-The desired progression is:
+PONS 402 can govern PONS-controlled participation involving a Lab.
 
-POLICY
+This may include:
+
+* agent activity
+* treasury activity
+* wallet activity
+* execution activity
+* API activity
+* deployment activity
+* launch approval
+* research activity
+* accounting
+* evidence
+* Control Tower decisions
+
+PONS 402 does not claim that a third-party launchpad, token contract, DEX, bridge, or immutable protocol automatically inherits 402 rules.
+
+⸻
+
+CURRENT LAB REGISTRY
+
+Genesis v2 includes public registry records for:
+
+* XLAB
+* NLAB
+* ELAB
+* DLAB
+* ABCLAB
+* TLAB
+
+Initial classification:
+
+AUTHOR_ORIGINATED
+
+Initial operational status:
+
+HOLD
+
+These records remain HOLD until required verification and governance conditions are satisfied.
+
+⸻
+
+THIRD-PARTY IDENTIFIERS
+
+Some Lab concepts may reference public companies, technologies, or third-party brands.
+
+Unless separately established by evidence, no:
+
+* sponsorship
+* endorsement
+* partnership
+* licensing
+* ownership
+* authorization
+* official affiliation
+
+should be inferred.
+
+Specialist review may be required before public use of third-party marks.
+
+⸻
+
+WALLET REGISTRY
+
+Genesis v2 uses public opaque wallet IDs rather than publishing unnecessary operational topology.
+
+Public records may contain:
+
+* wallet ID
+* public address
+* observed chain
+* observed account type
+* evidence class
+* status
+* evidence references
+
+Sensitive operational relationships belong in an appropriately restricted governance system.
+
+No secrets belong in either location.
+
+⸻
+
+NETWORK POLICY
+
+The current intended PONS execution environment is:
+
+Robinhood Chain Mainnet
+
+Chain ID: 4663
+
+Native gas asset: ETH
+
+Other networks require explicit policy approval.
+
+The existence of an address on an EVM-compatible network is not, by itself, proof of role or ownership.
+
+⸻
+
+CONTROL TOWER
+
+ENOCH ONE may function as the supervisory intelligence layer of the PONS Control Tower.
+
+The Control Tower may:
+
+* synthesize evidence
+* detect contradictions
+* inspect gate state
+* identify missing evidence
+* monitor risk
+* produce recommendations
+* route decisions for human review
+* generate reports
+* reconcile policy state
+
+The Control Tower does not independently manufacture legal or governance authorization.
+
+⸻
+
+AI HOMEBoy
+
+AI Homeboy may provide shared AI infrastructure supporting PONS and ENOCH ONE.
+
+AI infrastructure remains subordinate to PONS 402 governance.
+
+The AI provider is infrastructure.
+
+It is not sovereign authority.
+
+⸻
+
+CONTROL MATURITY
+
+PONS 402 does not use an LLM score as the authoritative measure of readiness.
+
+Each material control progresses through four stages:
+
+DOCUMENTED
+
+↓
+
+ENFORCED
+
+↓
+
+TESTED
+
+↓
+
+VERIFIED
+
+The authoritative maturity record is:
+
+CONTROL-MATRIX.md
+
+⸻
+
+REPOSITORY STRUCTURE
+
+PONS 402 Genesis v2 includes:
+
+README.md
+
+CONSTITUTION.md
+
+ARCHITECTURE.md
+
+CONTROL-MATRIX.md
+
+SECURITY.md
+
+THREAT-MODEL.md
+
+DISCLOSURES.md
+
+CONTRIBUTING.md
+
+CHANGELOG.md
+
+schemas/
+
+policies/
+
+registry/
+
+engine/
+
+tests/
+
+examples/
+
+reviews/
+
+.github/
+
+⸻
+
+MACHINE-READABLE CONTROL
+
+The intended progression is:
+
+DOCTRINE
 
 ↓
 
 SCHEMA
+
+↓
+
+POLICY
 
 ↓
 
@@ -634,11 +690,11 @@ GATE
 
 ↓
 
-AGENT PERMISSIONS
+AUTHORIZATION
 
 ↓
 
-CONTROL TOWER
+DECISION
 
 ↓
 
@@ -650,89 +706,92 @@ EVIDENCE
 
 ↓
 
+RECONCILIATION
+
+↓
+
 AUDIT
 
 ⸻
 
-REPOSITORY ROADMAP
+REVIEW ARCHITECTURE
 
-This repository will contain:
+PONS 402 separates AI-assisted review into four passes.
 
-README.md
-System mission and constitutional doctrine.
+PASS A — REPOSITORY CONTROL REVIEW
 
-ARCHITECTURE.md
-PONS + 402 + Control Tower technical architecture.
+Pinned repository and commit SHA.
 
-402-GATE.md
-Canonical decision gates.
+No unsupported blockchain claims.
 
-ASSET-LIFECYCLE.md
-Idea-to-retirement lifecycle.
+PASS B — EVIDENCE RECONCILIATION
 
-X402-INTEGRATION.md
-External x402 payment integration.
+Deterministically collected evidence is reconciled against repository claims.
 
-WALLET-CONSTITUTION.md
-Wallet and treasury controls.
+PASS C — ADVERSARIAL CONTROL TEST
 
-ENTITY-REGISTRY.md
-Entity relationships and responsibilities.
+Explicit attacks are tested against expected fail-closed behavior.
 
-AGENT-CONSTITUTION.md
-AI and autonomous-agent authority boundaries.
+PASS D — SPECIALIST ESCALATION
 
-CONTROL-TOWER.md
-Launch and execution decision architecture.
+Legal, regulatory, accounting, tax, trademark, privacy, AML, sanctions, or other specialist issues are escalated to appropriate humans.
 
-PROVENANCE.md
-Evidence and chain-of-trust requirements.
+Combined AI output should be labeled:
 
-AUDIT.md
-Audit record and reconstruction standards.
+PONS 402 MULTI-MODEL ADVERSARIAL RESEARCH MEMORANDUM
 
-ACCOUNTING.md
-Onchain/offchain reconciliation requirements.
+AI consensus alone is not audit certification.
 
-THREAT-MODEL.md
-Technical, financial, governance, and agent risks.
+⸻
 
-DISCLOSURES.md
-Public-facing disclosure standards.
+SECURITY
 
-SECURITY.md
-Security policy.
+Never commit:
 
-schemas/
-Machine-readable PONS 402 schemas.
-
-policies/
-Executable policy definitions.
-
-registry/
-Approved entity, wallet, asset, Lab, network, and contract records.
-
-evidence/
-Non-secret evidence manifests and hashes.
-
-tests/
-Positive, negative, adversarial, and fail-closed tests.
+* private keys
+* seed phrases
+* mnemonics
+* signing shares
+* API secrets
+* RPC credentials
+* facilitator credentials
+* privileged recovery procedures
+* confidential legal communications
+* unnecessary exploit-relevant topology
 
 ⸻
 
 NORTH STAR
 
-PONS 402 is not designed to prevent machines from acting.
+PONS 402 exists to make machine-scale execution accountable.
 
-It is designed to make machine action accountable.
+The technical hierarchy is:
 
-The operating doctrine is:
+CONSTITUTION
 
-GOD → HUMAN ACCOUNTABILITY → MACHINE ASSISTANCE
+↓
 
-For the technical system:
+POLICY
 
-CONSTITUTION → GOVERNANCE → HUMAN AUTHORITY → MACHINE EXECUTION → AUDIT
+↓
+
+HUMAN ACCOUNTABILITY
+
+↓
+
+MACHINE ASSISTANCE
+
+↓
+
+AUTHORIZED EXECUTION
+
+↓
+
+EVIDENCE
+
+↓
+
+AUDIT
 
 Never:
 
@@ -740,10 +799,16 @@ MACHINE AUTHORITY → HUMAN EXCUSE
 
 ⸻
 
-Status
+STATUS
 
-PONS 402 — GENESIS BUILD
+PONS 402 — GENESIS v2
 
-Architecture under active development.
+This repository is under active development.
 
-No asset, payment mechanism, smart contract, agent, or repository artifact should be interpreted as approved for production merely because it appears in this repository.
+Presence in this repository does not constitute production approval.
+
+Until a mandatory control is documented, enforced, tested, and verified where required, the system must remain appropriately restricted.
+
+FAIL CLOSED.
+
+CAN ≠ MAY.
